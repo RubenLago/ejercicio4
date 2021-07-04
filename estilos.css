@@ -23,9 +23,7 @@ nav{
 }
 nav ul{
    width: 25%;
-   position: relative;
-   
-    
+   position: relative; 
 }
 nav ul:first-child{
     background-color: rgb(236, 26, 96);
@@ -44,35 +42,76 @@ nav li a{
     text-decoration: none;
     font-family: 'Tourney', cursive;
     text-shadow: 1px 1px 2px black;
-    
-
 }
-nav li,
 
+nav li,
 a{
     color: white;
+
 }
-nav p{
-    font-family: 'Tourney', cursive;;
+
+/*  no conseguía dar ancho al bloque porque a es un elemento de línea */
+nav ul a{
+    display: inline-block;
+    width: 100px;
 }
 
 nav li{
-    position: absolute;
+    text-align: center;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     list-style: none;
-   
+/*     background-color: blue;  */  
+    z-index: 2;
 }
 
-/* querys */
-@media screen and (max-width: 414px){
-    nav{
-       /*  intentar responsive para movil */
-        
-    
-    }
+
+nav li .about{
+    background-color: rgb(236, 26, 96);
 }
+nav li .skills{
+    background-color: rgb(245, 146, 129);
+}
+nav li .works{
+    background-color: bisque;
+}
+nav li .contact{
+    background-color: aquamarine;
+} 
+
+
+
+nav li p{
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 0px red;
+    visibility: hidden;
+}
+
+
+nav ul:hover p{
+    visibility: visible;
+    margin-top: 10px;
+}
+
+nav ul:hover .linea1, nav ul:hover .linea2, nav ul:hover .linea3, nav ul:hover .linea4{
+    
+    position:absolute;
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+
+
 
 
 
