@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    width: 1200px;
+    background-color: black;
+    
+}
+
+nav{
+    width: 100%;
+   height: 600px;
+    display: flex;
+    position: absolute;
+    
+
+}
+nav ul{
+   width: 25%;
+   position: relative;
+   
+    
+}
+nav ul:first-child{
+    background-color: rgb(236, 26, 96);
+}
+nav ul:nth-child(2){
+    background-color: rgb(245, 146, 129);
+}
+nav ul:nth-child(3){
+    background-color: bisque;
+}
+nav ul:last-child{
+    background-color: aquamarine;
+}
+
+nav li a{
+    text-decoration: none;
+    font-family: 'Tourney', cursive;
+    text-shadow: 1px 1px 2px black;
+    
+
+}
+nav li,
+
+a{
+    color: white;
+}
+nav p{
+    font-family: 'Tourney', cursive;;
+}
+
+nav li{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+   
+}
+
+/* querys */
+@media screen and (max-width: 414px){
+    nav{
+       /*  intentar responsive para movil */
+        
+    
+    }
+}
+
+
+
+
+
